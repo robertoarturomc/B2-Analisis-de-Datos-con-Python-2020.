@@ -1,27 +1,18 @@
- ## Nombre del Postwork: Correlaciones y Regresión Linear Simple
+ `Fundamentos de Python para Data Analysis`> `[Sesión 04]`  
+ 
+## Postwork 
 
 ### OBJETIVO 
-
-- Realizar análisis bivariado con variables numéricas
-- Identificar valores atípicos y decidir qué hacer con ellos
-- Explorar las relaciones existentes entre nuestras variables numéricas
-- Entrenar modelos de regresión lineal para realizar predicciones
-
-#### REQUISITOS 
-
-- Tener un dataset que contenga variables numéricas
+ - Conocer acerca del análisis exploratorio de datos. 
 
 #### DESARROLLO
+Como hemos visto, el análisis exploratorio de datos te servirá para tener una noción clara de cómo se comportan tus datos, y que es lo que puedes esperar de ellos. Por ejemplo: si tus datos presentan una distribución gaussiana o normal, es posible que cuando vayamos a entrenar un algoritmo de aprendizaje automático, los datos que son menos probables de aparecer sean más difíciles de reconocer.  
 
-En este Postwork vamos a hacer análisis bivariado de nuestras variables numéricas. Si tu dataset sólo tiene variables categóricas o datos no estructurados (texto libre), entonces puedes pedirle a tu experta que te comparta algún dataset con el que puedas realizar estos ejercicios.
+**Tips:**  
 
-Utilizando tu dataset, realiza las siguientes actividades:
+Si tu base de datos está muy desbalanceada, lo primero y más recomendable será buscar más datos de aquellas clases que casi no tienes muestras. (por ejemplo: en el caso de ciclistas, quizás convenga buscar ciclistas de edades avanzadas, que aunque hay pocos, es importante contemplarlos).  
 
-1. Identifica cuáles son las variables numéricas en tu dataset.
-2. Asegúrate de que tengan el tipo de dato correcto y que no haya `NaNs` por ahí escondidos.
-3. Genera una matriz de correlaciones y un pairplot para visualizar de manera general las relaciones entre tus variables numéricas.
-4. Utilizando gráficas de dispersión y tus medidas de locación y dispersión, identifica dónde hay valores atípicos y decide qué hacer con ellos.
-5. Revisa si tu revisión de valores atípicos cambió de alguna manera las relaciones existentes.
-6. Donde consideres necesario, entrena modelos de Regresión Lineal con un o más pares de variables. Incluso si no te parece que realizar predicciones entre pares de variables tiene sentido para tu proyecto, prueba realizar un par de regresiones para que practiques el procedimiento.
+Si tu base de datos es difícil de nutrir con nuevos datos, puedes intentar retirar aquellos casos muy atípicos, dado que la probabilidad es que casi no aparezcan. 
 
-¡Mucha suerte!
+Si tu base de datos realmente presenta demasiado desbalance, puedes intentar con una técnica llamada “Data Augmentation”, el cual, si bien es cierto es muy enfocado a imágenes, te puede dar una idea de cómo hacer crecer tu base de datos artificialmente:   http://cs231n.stanford.edu/reports/2017/pdfs/300.pdf 
+

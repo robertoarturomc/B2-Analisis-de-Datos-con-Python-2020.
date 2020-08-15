@@ -1,27 +1,22 @@
- ## Nombre del Postwork: Clasificación No Supervisada y Supervisada
+ `Fundamentos de Python para Data Analysis`> `[Sesión 08]`  
+  
+## Postwork
 
 ### OBJETIVO 
-
-- Aplicar los algoritmos de Clasificación No Supervisada y Supervisada aprendidos en esta sesión a nuestro proyecto
-
-#### REQUISITOS 
-
-- Tener un dataset limpio que contenga una variable dependiente binaria.
-
-> En caso de que tu dataset no contenga una variable dependiente binaria, date una vuelta por [Kaggle](https://kaggle.com) y busca algún dataset apropiado. Lo que nos interesa en que practiques estas herramientas durante la clase para que puedas expresarle tus dudas a la experta.
+ - Identificar los conceptos de clusterización y redes neuronales. Conocer sobre otros métodos de clasificación – o bien, las redes neuronales y/o las K-medias.  
 
 #### DESARROLLO
+**Acerca de la clusterización y las redes neuronales:**  
 
-¡Bienvenid@ a tu último Postwork! En este Postwork haremos dos cosas: practicar la aplicación del algoritmo de Regresión Logística y resolver dudas generales sobre tu proyecto. Realiza los siguientes pasos:
+En esta sesión hemos visto las herramientas más comunes para poder hacer agrupación de datos, clasificación binaria, y clasificación multi-clase. No hemos tenido que tratar la matemática detrás de cómo funcionan, sin embargo es importante que tengas una noción más a profundidad si planeas crear algoritmos de clasificación más poderosos. Sin embargo, para tu proyecto estos algoritmos puede que sean suficientes. Si tienes más curiosidad sobre otros métodos de clasificación – o bien, las redes neuronales y/o las K-medias no están resolviendo tu problema- puedo sugerirte los siguientes tips:  
 
-1. Si hay un problema de clasificación binaria en tu proyecto, ¡genial! Aplica lo aprendido en esta sesión y entrena un modelo de Regresión Logística con tu dataset.
-2. Si no hay un problema de clasificación binaria en tu proyecto, pídele ayuda a la experta para conseguir un dataset con el que puedas practicar.
-3. Evalúa tu modelo de Regresión Logística utilizando matriz de confusión; medidas de precisión, exactitud, sensibilidad y especificidad; y curva ROC / AUC.
+**Tips:**  
 
-> Ojo: si tu proyecto tiene un problema de clasificación multiclase (es decir, la variable dependiente no es binaria sino que contiene más de 2 categorías posibles), pídele ayuda a la experta para aplicar el algoritmo de Regresión Logística Multiclase.
+Hay una alternativa a redes neuronales llamada “Máquinas de soporte vectorial” (SVM) que incluye SciKitLearn, y puede serte de utilidad. Ojo, Deep Learning y SVM no se llevan muy bien que digamos, y si planeas avanzar hacia Deep Learning, SVM puede no ser la mejor idea… https://scikit-learn.org/stable/modules/svm.html   
 
-Después de haber realizado esta práctica, aprovecha que es el último Postwork para plantear dudas generales acerca de tu proyecto. Recuerda que tu proyecto será presentado en público ante líderes de la industria y expert@s, así que es una buena idea que te sientas muy cómodo con lo que estás presentando.
+Para la agrupación de datos puedes utilizar también el algoritmo de propagación por afinidad (affinity propagation) que se encuentra descrito aquí: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AffinityPropagation.html   
 
-Recuerda también que presentar un trabajo de ciencia de datos no trata solamente sobre lo técnico y las evaluaciones estadísticas que realicemos, sino que también requiere de mucho cuidado en la presentación. Aprovecha el tiempo restante para trabajar sobre la presentación de tu proyecto, de manera que se vea atractivo y que presente tus hallazgos con la mayor claridad posible.
+Un mapa auto-organizativo (SOM) es un híbrido entre redes neuronales y agrupación. Te permite reducir un hiperplano n-dimensional en un mapa de 2 dimensiones, lo cual puede serte útil para categorizar o crear sistemas de recomendación, puedes revisar de ello aquí:
+https://towardsdatascience.com/self-organizing-maps-ff5853a118d4 
 
-¡Muchas felicidades por haber terminado el módulo de Análisis de Datos con Python! Estamos muy emocionados de ver qué cosas maravillosas harás con los conocimientos que adquiriste durante el curso. Gracias por confiar en nosotros, esperamos que esta aventura haya sido de mucho provecho para ti.
+
